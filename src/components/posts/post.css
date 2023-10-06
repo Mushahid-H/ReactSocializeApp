@@ -32,3 +32,35 @@
 .postDate {
   font-size: 10px;
 }
+.postCenter {
+  margin: 20px 0px;
+}
+.postImage {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.fontLikeCounter {
+  font-size: 15px;
+}
+.postComment {
+  cursor: pointer;
+  font-size: 15px;
+  border-bottom: 1px dashed gray;
+}

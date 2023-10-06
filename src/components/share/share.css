@@ -37,6 +37,7 @@
 .shareOptions {
   display: flex;
   margin-left: 20px;
+  align-items: center;
 }
 .shareOption {
   display: flex;
@@ -54,7 +55,7 @@
 }
 .shareButton {
   border: none;
-  background-color: green;
+  background-color: limegreen;
   font-weight: 500;
   padding: 7px;
   border-radius: 5px;

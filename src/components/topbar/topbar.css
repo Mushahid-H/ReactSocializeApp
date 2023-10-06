@@ -2,12 +2,13 @@
   height: 50px;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: #1877f2;
+  background-color: limegreen;
   color: white;
   display: flex;
   position: sticky;
   top: 0;
   align-items: center;
+  z-index: 999;
 }
 .topbarLeft {
   flex: 3;

@@ -11,6 +11,8 @@ import {
   School,
 } from '@mui/icons-material'
 import './sidebar.css'
+import { Users } from '../../Data'
+import CloseFriend from '../closeFriends/Friends'
 
 const Sidebar = () => {
   return (
@@ -60,66 +62,9 @@ const Sidebar = () => {
           </button>
           <hr className='sidebarHr' />
           <ul className='sidebarFrindsList'>
-            <li className='sidebarFreind'>
-              <img
-                src='/assets/IMG_0601.JPG'
-                alt=''
-                className='sidebarFriendImg'
-              />
-              <div class='sidebarFriendName'>Joe Dev</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img
-                src='/assets/IMG_0032.JPG'
-                alt=''
-                className='sidebarFriendImg'
-              />
-              <div class='sidebarFriendName'>Arsalan Ahmed</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img
-                src='/assets/IMG_0062.JPG'
-                alt=''
-                className='sidebarFriendImg'
-              />
-              <div class='sidebarFriendName'>Ahmed Khalid</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img
-                src='/assets/IMG_0366.JPG'
-                alt=''
-                className='sidebarFriendImg'
-              />
-              <div class='sidebarFriendName'>Mushahid Khan</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img
-                src='/assets/IMG_0600.JPG'
-                alt=''
-                className='sidebarFriendImg'
-              />
-              <div class='sidebarFriendName'>Joe Biden rathore</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img src='/assets/1.jpg' alt='' className='sidebarFriendImg' />
-              <div class='sidebarFriendName'>Lion Nawaz</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img src='/assets/2.jpg' alt='' className='sidebarFriendImg' />
-              <div class='sidebarFriendName'>Tato Bachaa</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img src='/assets/3.jpg' alt='' className='sidebarFriendImg' />
-              <div class='sidebarFriendName'>Kite Shareef UnShareef</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img src='/assets/4.jpg' alt='' className='sidebarFriendImg' />
-              <div class='sidebarFriendName'>Shah rukh khan</div>
-            </li>
-            <li className='sidebarFreind'>
-              <img src='/assets/a.JPG' alt='' className='sidebarFriendImg' />
-              <div class='sidebarFriendName'>Banda e khuda</div>
-            </li>
+            {Users.map((u) => (
+              <CloseFriend key={u.id} user={u} />
+            ))}
           </ul>
         </div>
       </div>
